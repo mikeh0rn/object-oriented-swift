@@ -73,3 +73,10 @@ class Vehicle {
     
 }
 
+
+extension Vehicle : CustomStringConvertible {
+  var description:String {
+    return vehicleTitle + "\n" + vehicleDetails
+  }
+}
+

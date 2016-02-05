@@ -33,6 +33,13 @@ class VehicleDetailViewController: UIViewController {
     super.viewDidLoad()
     configureView()
   }
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    if let vehicle = detailVehicle {
+      print(vehicle)
+    }
+  }
 
   //The if let statement makes sure that vehicle exists, and if it does, creates an alert controller using your extension and presents it.
   
