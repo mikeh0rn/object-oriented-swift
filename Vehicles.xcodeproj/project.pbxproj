@@ -17,6 +17,7 @@
 		67125FDA1C63AC2D0057D969 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67125FD91C63AC2D0057D969 /* Car.swift */; };
 		67125FDC1C63EF1B0057D969 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67125FDB1C63EF1B0057D969 /* Motorcycle.swift */; };
 		67125FDE1C63F8840057D969 /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67125FDD1C63F8840057D969 /* Truck.swift */; };
+		67125FE01C6501B50057D969 /* UIAlertController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67125FDF1C6501B50057D969 /* UIAlertController+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		67125FD91C63AC2D0057D969 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		67125FDB1C63EF1B0057D969 /* Motorcycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
 		67125FDD1C63F8840057D969 /* Truck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
+		67125FDF1C6501B50057D969 /* UIAlertController+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIAlertController+Convenience.swift"; path = "../UIAlertController+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		5DC89C6019BE274D00A75324 /* Vehicles */ = {
 			isa = PBXGroup;
 			children = (
+				67125FDF1C6501B50057D969 /* UIAlertController+Convenience.swift */,
 				5DC89C6319BE274D00A75324 /* AppDelegate.swift */,
 				67125FD91C63AC2D0057D969 /* Car.swift */,
 				5DC89C6519BE274D00A75324 /* VehicleListTableViewController.swift */,
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67125FE01C6501B50057D969 /* UIAlertController+Convenience.swift in Sources */,
 				5DC89C8319BE289D00A75324 /* Vehicle.swift in Sources */,
 				5DC89C6819BE274D00A75324 /* VehicleDetailViewController.swift in Sources */,
 				67125FDA1C63AC2D0057D969 /* Car.swift in Sources */,

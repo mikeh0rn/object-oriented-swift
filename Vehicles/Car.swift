@@ -10,15 +10,23 @@ import Foundation
 
 class Car: Vehicle {
   
-  var isConvertible:Bool = false
-  var isHatchback:Bool = false
-  var hasSunroof: Bool = false
-  var numberOfDoor:Int = 0
+  let isConvertible: Bool
+  let isHatchback: Bool
+  let hasSunroof: Bool
+  let numberOfDoors: Int
   
-  override init() {
-    //For Cars, we know that the numberOfWheels will be four. To express this you override the initializer, call the superclass initializer, and then customize the numberOfWheels property to four.
-    super.init()
-    numberOfWheels = 4
+  //in the initializer you first initialize the properties that the Car class introduces.
+  init(brandName: String, modelName: String, modelYear: Int, powerSource: String,
+    isConvertible: Bool, isHatchback: Bool, hasSunroof: Bool, numberOfDoors: Int) {
+      
+      self.isConvertible = isConvertible
+      self.isHatchback = isHatchback
+      self.hasSunroof = hasSunroof
+      self.numberOfDoors = numberOfDoors
+      
+      // Then you call the superclass’s designated initializer.
+      super.init(brandName: brandName, modelName: modelName, modelYear: modelYear,
+        powerSource: powerSource, numberOfWheels: 4)
   }
   
   override var vehicleDetails: String {
@@ -41,7 +49,7 @@ class Car: Vehicle {
     carDetailsBuilder += "Is Convertible: "
     carDetailsBuilder += isConvertible ? yes : no
     
-    carDetailsBuilder += "Number of doors: \(numberOfDoor)"
+    carDetailsBuilder += "Number of doors: \(numberOfDoors)"
     
     // Create the final string by combining basic and car-specific details.
     let carDetails = basicDetails + carDetailsBuilder

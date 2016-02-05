@@ -16,17 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
-    
-    let vehicle = Vehicle()
-    print("Vehicle turn: \(vehicle.turn(700))")
-    let changeGearResult = vehicle.changeGears("Test")
-    print("Vehicle change gear: \(changeGearResult)")
-    
-    print("Vehicle make noise: \(vehicle.makeNoise())")
-    print("Vehicle go forward: \(vehicle.goForward())")
-    print("Vehicle go backward: \(vehicle.goBackward())")
-    print("Vehicle stop moving: \(vehicle.stopMoving())")
-    
     return true
   }
   

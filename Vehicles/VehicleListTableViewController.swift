@@ -24,85 +24,50 @@ class VehicleListTableViewController: UITableViewController {
     vehicles.removeAll(keepCapacity: true)
     
     //Create car
-    let mustang = Car()
-    mustang.brandName = "Ford"
-    mustang.modelName = "Mustang"
-    mustang.modelYear = 1968
-    mustang.isConvertible = true
-    mustang.isHatchback = false
-    mustang.hasSunroof = false
-    mustang.numberOfDoor = 2
-    mustang.powerSource = "gas engine"
+    let mustang = Car(brandName: "Ford", modelName: "Mustang", modelYear: 1968, powerSource: "gas engine",
+      isConvertible: true, isHatchback: false, hasSunroof: false, numberOfDoors: 2)
     
     //add to the array
     vehicles.append(mustang)
     
     //Create another car.
-    let outback = Car()
-    outback.brandName = "Subaru"
-    outback.modelName = "Outback"
-    outback.modelYear = 1999
-    outback.isConvertible = false
-    outback.isHatchback = true
-    outback.hasSunroof = false
-    outback.numberOfDoor = 5
-    outback.powerSource = "gas engine"
+    let outback = Car(brandName: "Subaru", modelName: "Outback", modelYear: 1999, powerSource: "gas engine",
+      isConvertible: false, isHatchback: true, hasSunroof: false, numberOfDoors: 5)
     
     vehicles.append(outback)
     
     //Create another car.
-    let prius = Car()
-    prius.brandName = "Totoya"
-    prius.modelName = "Prius"
-    prius.modelYear = 2002
-    prius.isConvertible = true
-    prius.isHatchback = false
-    prius.hasSunroof = true
-    prius.numberOfDoor = 4
-    prius.powerSource = "hybrid engine"
+    let prius = Car(brandName: "Toyota", modelName: "Prius", modelYear: 2002, powerSource: "hybrid engine",
+      isConvertible: false, isHatchback: true, hasSunroof: true, numberOfDoors: 4)
     
     vehicles.append(prius)
     
     // Create a motorcycle
-    let harley = Motorcycle()
-    harley.brandName = "Harley-Davidson"
-    harley.modelName = "Softail"
-    harley.modelYear = 1979
-    harley.engineNoise = "Vrrrrrrrroooooooooom!"
+    let harley = Motorcycle(brandName: "Harley-Davidson", modelName: "Softail", modelYear: 1979,
+      engineNoise: "Vrrrrrrrroooooooooom!")
     
     // Add it to the array.
     vehicles.append(harley)
     
     // Create another motorcycle
-    let kawasaki = Motorcycle()
-    kawasaki.brandName = "Kawasaki"
-    kawasaki.modelName = "Ninja"
-    kawasaki.modelYear = 2005
-    kawasaki.engineNoise = "Neeeeeeeeeeeeeeeeow!"
+    let kawasaki = Motorcycle(brandName: "Kawasaki", modelName: "Ninja", modelYear: 2005,
+      engineNoise: "Neeeeeeeeeeeeeeeeow!")
+
     
     // Add it to the array
     self.vehicles.append(kawasaki)
     
     // Create a truck
-    let silverado = Truck()
-    silverado.brandName = "Chevrolet"
-    silverado.modelName = "Silverado"
-    silverado.modelYear = 2011
-    silverado.numberOfWheels = 4
-    silverado.cargoCapacityCubicFeet = 53
-    silverado.powerSource = "gas engine"
+    let silverado = Truck(brandName: "Chevrolet", modelName: "Silverado", modelYear: 2011,
+      powerSource: "gas engine", numberOfWheels: 4, cargoCapacityInCubicFeet: 53)
     
     // Add it to the array
     vehicles.append(silverado)
     
     // Create another truck
-    let eighteenWheeler = Truck()
-    eighteenWheeler.brandName = "Peterbilt"
-    eighteenWheeler.modelName = "579"
-    eighteenWheeler.modelYear = 2013
-    eighteenWheeler.numberOfWheels = 18
-    eighteenWheeler.cargoCapacityCubicFeet = 408
-    eighteenWheeler.powerSource = "diesel engine"
+    let eighteenWheeler = Truck(brandName: "Peterbilt", modelName: "579", modelYear: 2013,
+      powerSource: "diesel engine", numberOfWheels: 18, cargoCapacityInCubicFeet: 408)
+    
     
     // Add it to the array
     vehicles.append(eighteenWheeler)

@@ -9,7 +9,14 @@
 import Foundation
 
 class Truck : Vehicle {
-  var cargoCapacityCubicFeet: Int = 0
+  
+  let cargoCapacityCubicFeet: Int
+  
+  init(brandName: String, modelName: String, modelYear: Int, powerSource: String, numberOfWheels: Int, cargoCapacityInCubicFeet:Int) {
+    self.cargoCapacityCubicFeet = cargoCapacityInCubicFeet
+    super.init(brandName: brandName, modelName: modelName, modelYear: modelYear,
+      powerSource: powerSource, numberOfWheels: numberOfWheels)
+  }
 
 
 //MARK: - Superclass overrides
